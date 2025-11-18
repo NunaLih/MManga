@@ -1,0 +1,204 @@
+.reader-page {
+  display: flex;
+  background-color: #1a1a1a;
+  min-height: 100vh;
+}
+
+.sidebar-layout {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  background: linear-gradient(180deg, var(--dark-card) 0%, #0d0a00 100%);
+  border-right: 1px solid #3a3432;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+
+.sidebar-layout .close-btn {
+  background: #444;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.sidebar-layout .close-btn:hover {
+  background: #555;
+}
+
+.reader-controls {
+  position: sticky;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #333;
+}
+
+.close-btn {
+  background: #444;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.close-btn:hover {
+  background: #555;
+}
+
+.chapter-info h2 {
+  color: white;
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.direction-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.readingR {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.direction-menu span {
+  color: #ccc;
+  font-size: 0.9rem;
+  padding: 10px;
+}
+
+.direction-menu button {
+  background: #333;
+  color: white;
+  border: 1px solid #555;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  flex: 1 1 100px;
+}
+
+.direction-menu button.active {
+  background: #ccbb96;
+  border-color: #ccbb96;
+}
+
+.direction-menu button.active {
+  background: #ccbb96;
+  border-color: #ccbb96;
+  color: #000;
+}
+
+.direction-menu button:hover {
+  background: #444;
+}
+
+.reader-content {
+  margin-left: 120px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 20px;
+}
+.reader-pages {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reader-page-image {
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+}
+
+.reader-page.vertical .reader-pages {
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.reader-page.vertical .reader-page-image {
+  width: 100%;
+  height: auto;
+  max-width: 1200px;
+  margin: 0 auto 16px;
+  display: block;
+}
+
+.reader-page.rtl .reader-pages {
+  direction: rtl;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reader-loading,
+.reader-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  color: white;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.reader-error button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #555;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .reader-controls {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .direction-menu {
+    order: -1;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .chapter-info h2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
