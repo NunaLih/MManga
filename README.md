@@ -1,8 +1,5 @@
 # MManga
 
-[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)  
-[![Platform](https://img.shields.io/badge/platform-Windows%20|%20macOS%20|%20Linux-lightgrey)](https://github.com/yourusername/mmanga)
-
 ### Tech Stack
 [![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=white)](https://reactjs.org/)  
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)  
