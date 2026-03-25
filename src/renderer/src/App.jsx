@@ -12,7 +12,7 @@ import History from './content/Tabs/History'
 import AllManga from './content/Tabs/AllManga'
 import Layout from './Layout'
 import Settings from './Content/Tabs/Settings'
-import './themes.css'
+// import './themes.css'
 
 function App() {
   return (

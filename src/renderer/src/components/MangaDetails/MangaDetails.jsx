@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { FetchChapter, fetchRaiting, fetchMangaById } from '../../Services/MangaDex/MangaDex'
+import { FetchChapter, fetchRaiting, fetchMangaById } from '../../Services/MangaDex/MangaDex.js'
 import Reader from '../Reader/Reader'
 import { useNavigate, useParams } from 'react-router-dom'
 import { isBookmared, removeBookmarks, addBookmarks } from '../../Services/BookmarkService.js'
@@ -7,7 +7,7 @@ import { downloadChapterZip } from '../../Services/DownloadService.js'
 import { addDownloadHistory } from '../../Services/DownloadHistoryService.js'
 
 export default function MangaDetails() {
-  const { mangaId } = useParams()
+  const { mangaId, source } = useParams() // соурс для выбора манги(пока хуй знает куда добавлять, потом исправить!!!!!)
   const navigate = useNavigate()
 
   const [chapters, setChapters] = useState([])

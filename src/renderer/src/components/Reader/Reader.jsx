@@ -46,7 +46,6 @@ export default function Reader({ chapter, onClose, pages = [], readingDirection 
       )}
 
       <div className="reader-content" onClick={(e) => e.stopPropagation()}>
-
         <div className={`reader-layout ${readingDirection}`}>
           {pages.length === 0 ? (
             <LoaderSpinner />
