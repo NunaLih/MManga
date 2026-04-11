@@ -1,6 +1,6 @@
 import JSZip from 'jszip'
 import { saveAs } from 'file-saver'
-import { fetchChapterInfo, fetchChapterPage } from './MangaDex/MangaDex'
+import { fetchChapterInfo, fetchChapterPage } from './Source/MangaDex'
 
 async function getBlob(url) {
   let res = await fetch(url)

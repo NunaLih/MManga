@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { fetchChapterPage } from '../../Services/MangaDex/MangaDex'
+import { fetchChapterPage } from '../../Services/Source/MangaDex'
 import LoaderSpinner from '../LoaderSpinner/LoaderSpinner'
 
 export default function Reader({ chapter, onClose, pages = [], readingDirection }) {

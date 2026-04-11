@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { FetchChapter, fetchRaiting, fetchMangaById } from '../../Services/MangaDex/MangaDex.js'
+import { FetchChapter, fetchRaiting, fetchMangaById } from '../../Services/Source/MangaDex.js'
 import Reader from '../Reader/Reader'
 import { useNavigate, useParams } from 'react-router-dom'
 import { isBookmared, removeBookmarks, addBookmarks } from '../../Services/BookmarkService.js'

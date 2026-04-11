@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
-import { fetchChapterPage, fetchChapterInfo } from '../../Services/MangaDex/MangaDex'
+import { fetchChapterPage, fetchChapterInfo } from '../../Services/Source/MangaDex'
 import Reader from '../Reader/Reader'
 import '../../ReaderPage.css'
 

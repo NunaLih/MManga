@@ -1,4 +1,4 @@
-import getSource from '../MangaSource/index'
+import getSource from './index'
 
 export async function fetchRaiting(source, id) {
   const api = getSource(source)

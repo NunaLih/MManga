@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { fetchManga, searchManga } from '../../Services/MangaDex/MangaDex.js'
+import { fetchManga, searchManga } from '../../Services/Source/MangaDex.js'
 import MangaCard from '../../components/MangaCard/MangaCard.jsx'
 import LoaderSpinner from '../../components/LoaderSpinner/LoaderSpinner.jsx'
 import MangaDetails from '../../components/MangaDetails/MangaDetails.jsx'

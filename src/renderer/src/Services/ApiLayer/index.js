@@ -1,5 +1,5 @@
-import * as MangaDex from '../MangaDex/MangaDex'
-import * as MintManga from '../MintManga/MintManga'
+import * as MangaDex from '../Source/MangaDex'
+import * as MintManga from '../Normalizer/NormalizeManga'
 
 function getSource(source) {
   if (source === 'mintManga') {

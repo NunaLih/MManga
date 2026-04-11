@@ -21,7 +21,7 @@
     "@electron-toolkit/preload": "^3.0.2",
     "@electron-toolkit/utils": "^4.0.0",
     "axios": "^1.12.2",
-    "cheerio": "^1.1.2",
+    "cheerio": "^1.2.0",
     "cors": "^2.8.5",
     "electron-updater": "^6.3.9",
     "express": "^5.1.0",
